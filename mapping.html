@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course-to-Career Mapping - Disha Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">Disha Guide</a>
+                    <span class="ml-2 text-sm text-gray-600">दिशा गाइड</span>
+                </div>
+                <a href="index.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">← Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mapping Section -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Course-to-Career Mapping</h1>
+                <p class="text-xl text-gray-600">कोर्स से करियर मैपिंग</p>
+                <p class="text-lg text-gray-700 mt-4">Discover career paths for different courses and streams</p>
+            </div>
+
+            <!-- Interactive Chart Placeholder -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Career Mapping Visualization</h2>
+                <div class="flex justify-center">
+                    <canvas id="careerChart" width="800" height="400" class="border border-gray-300 rounded-lg">
+                        <!-- Placeholder for interactive career mapping chart -->
+                        <div class="flex items-center justify-center h-96 bg-gray-100 rounded-lg">
+                            <p class="text-gray-500 text-lg">Interactive Career Mapping Chart</p>
+                        </div>
+                    </canvas>
+                </div>
+            </div>
+
+            <!-- Course Categories -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Engineering Careers -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Engineering Courses</h3>
+                    <p class="text-gray-600 mb-4">इंजीनियरिंग कोर्स</p>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="font-semibold">Computer Science Engineering</h4>
+                            <p class="text-sm text-gray-600">Career Options: Software Developer, Data Scientist, AI Engineer, Cybersecurity Specialist</p>
+                        </div>
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="font-semibold">Mechanical Engineering</h4>
+                            <p class="text-sm text-gray-600">Career Options: Design Engineer, Manufacturing Engineer, Automotive Engineer, Robotics Engineer</p>
+                        </div>
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="font-semibold">Civil Engineering</h4>
+                            <p class="text-sm text-gray-600">Career Options: Structural Engineer, Construction Manager, Urban Planner, Environmental Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Careers -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-green-600 mb-4">Medical Courses</h3>
+                    <p class="text-gray-600 mb-4">मेडिकल कोर्स</p>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="font-semibold">MBBS</h4>
+                            <p class="text-sm text-gray-600">Career Options: General Physician, Specialist Doctor, Surgeon, Medical Researcher</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="font-semibold">BDS</h4>
+                            <p class="text-sm text-gray-600">Career Options: Dentist, Orthodontist, Oral Surgeon, Dental Researcher</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="font-semibold">Pharmacy</h4>
+                            <p class="text-sm text-gray-600">Career Options: Pharmacist, Drug Inspector, Pharmaceutical Researcher, Clinical Pharmacist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commerce Careers -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-4">Commerce Courses</h3>
+                    <p class="text-gray-600 mb-4">कॉमर्स कोर्स</p>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h4 class="font-semibold">B.Com</h4>
+                            <p class="text-sm text-gray-600">Career Options: Accountant, Financial Analyst, Tax Consultant, Banking Professional</p>
+                        </div>
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h4 class="font-semibold">BBA</h4>
+                            <p class="text-sm text-gray-600">Career Options: Business Analyst, Marketing Manager, HR Executive, Operations Manager</p>
+                        </div>
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h4 class="font-semibold">CA</h4>
+                            <p class="text-sm text-gray-600">Career Options: Chartered Accountant, Auditor, Tax Advisor, Financial Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arts Careers -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-orange-600 mb-4">Arts Courses</h3>
+                    <p class="text-gray-600 mb-4">आर्ट्स कोर्स</p>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-orange-500 pl-4">
+                            <h4 class="font-semibold">BA English</h4>
+                            <p class="text-sm text-gray-600">Career Options: Content Writer, Journalist, Teacher, Translator, Editor</p>
+                        </div>
+                        <div class="border-l-4 border-orange-500 pl-4">
+                            <h4 class="font-semibold">BA Psychology</h4>
+                            <p class="text-sm text-gray-600">Career Options: Psychologist, Counselor, HR Professional, Social Worker</p>
+                        </div>
+                        <div class="border-l-4 border-orange-500 pl-4">
+                            <h4 class="font-semibold">BA Political Science</h4>
+                            <p class="text-sm text-gray-600">Career Options: Civil Services, Politician, Policy Analyst, Diplomat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salary Ranges -->
+            <div class="mt-12 bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Average Salary Ranges</h2>
+                <p class="text-center text-gray-600 mb-8">औसत वेतन सीमा</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center p-4 bg-blue-50 rounded-lg">
+                        <h4 class="font-semibold text-blue-600">Engineering</h4>
+                        <p class="text-2xl font-bold text-gray-800">₹3-15 LPA</p>
+                        <p class="text-sm text-gray-600">Starting to Experienced</p>
+                    </div>
+                    <div class="text-center p-4 bg-green-50 rounded-lg">
+                        <h4 class="font-semibold text-green-600">Medical</h4>
+                        <p class="text-2xl font-bold text-gray-800">₹4-25 LPA</p>
+                        <p class="text-sm text-gray-600">Starting to Experienced</p>
+                    </div>
+                    <div class="text-center p-4 bg-purple-50 rounded-lg">
+                        <h4 class="font-semibold text-purple-600">Commerce</h4>
+                        <p class="text-2xl font-bold text-gray-800">₹2-12 LPA</p>
+                        <p class="text-sm text-gray-600">Starting to Experienced</p>
+                    </div>
+                    <div class="text-center p-4 bg-orange-50 rounded-lg">
+                        <h4 class="font-semibold text-orange-600">Arts</h4>
+                        <p class="text-2xl font-bold text-gray-800">₹2-10 LPA</p>
+                        <p class="text-sm text-gray-600">Starting to Experienced</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
